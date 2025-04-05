@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Character Name Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="ai-bot.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body background="background.jpg">
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-magic"></i> AI Character Name Generator</h1>
+            <p>Create unique and creative character names for your books, games, and stories!</p>
+        </header>
+
+        <div class="team-info">
+            <h2>Created By</h2>
+            <ul>
+                <li>62.&nbsp;<strong>Amar Mani Mishra  </strong> 12301362</li>
+                <li>08.&nbsp;<strong>Muzamil Amin Naik </strong> 12304986</li>
+                <li>66.&nbsp;<strong>Sudhanshu Singh  </strong>12306400</li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <section class="input-section">
+                <h2>Generate Character Names</h2>
+                
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category">
+                        <option value="fantasy">Fantasy</option>
+                        <option value="sci-fi">Science Fiction</option>
+                        <option value="medieval">Medieval</option>
+                        <option value="modern">Modern</option>
+                        <option value="cyberpunk">Cyberpunk</option>
+                        <option value="superhero">Superhero</option>
+                        <option value="villain">Villain</option>
+                        <option value="mythological">Mythological</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender (Optional)</label>
+                    <select id="gender">
+                        <option value="any">Any</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="neutral">Gender Neutral</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Character Description (Optional)</label>
+                    <textarea id="description" placeholder="Describe your character's personality, background, powers, or any other details..."></textarea>
+                    <div id="description-feedback" class="feedback-text"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="count">Number of Names</label>
+                    <select id="count">
+                        <option value="3">3 Names</option>
+                        <option value="5" selected>5 Names</option>
+                        <option value="10">10 Names</option>
+                    </select>
+                </div>
+
+                <button id="generate-btn" class="btn">Generate Names</button>
+            </section>
+
+            <section class="result-section">
+                <h2>Generated Names</h2>
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Summoning character names...</p>
+                </div>
+                <div class="result-container" id="result-container">
+                    <div class="initial-message">
+                        <p>Your character names will appear here.</p>
+                        <p>Fill out the form and click "Generate Names" to get started!</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p></p>
+            
+        </footer>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
